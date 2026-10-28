@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en" class="nojs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>JL Hub LLC · Everyday products, designed in the USA</title><meta name="description" content="JL Hub LLC is an independent consumer products company in California. We design products in the USA and sell them online in the United States."><meta name="color-scheme" content="light"><link rel="canonical" href="https://jl-hub.com/"><link rel="icon" href="favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#15315b"><meta property="og:type" content="website"><meta property="og:site_name" content="JL Hub LLC"><meta property="og:title" content="JL Hub LLC · Everyday products, designed in the USA"><meta property="og:description" content="JL Hub LLC is an independent consumer products company in California. We design products in the USA and sell them online in the United States."><meta property="og:url" content="https://jl-hub.com/"><link rel="preload" href="fonts/IBMPlexSansCondensed-latin-600.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/IBMPlexSans-latin-400.woff2" as="font" type="font/woff2" crossorigin><style>
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/IBMPlexSans-latin-400.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/IBMPlexSans-latin-600.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Sans Condensed';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/IBMPlexSansCondensed-latin-600.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/IBMPlexMono-latin-500.woff2') format('woff2')}
+:root{color-scheme:light;--ink:#0e1a2b;--ink-2:#3a4a5f;--muted:#647389;--line:#dde3ea;--line-2:#edf1f5;--track:#eef2f6;--bg:#f4f6f9;--card:#ffffff;--card-2:#f8fafc;--brand:#15315b;--brand-2:#1f4478;--brand-bg:#e9eff9;--mark-2:#3b6fc4;--link:#1f56b8;--green:#137556;--green-bg:#e6f4ee;--amber:#8a5a0a;--amber-bg:#fcf2e0;--crimson:#a3244a;--crimson-bg:#fbe9ee;--blue:#234a86;--blue-bg:#e9eff9;--slate:#3e4c59;--slate-bg:#e9edf1;--gold:#c9a24e;--gold-2:#9c7726;--band-1:#0d1f3c;--band-2:#15305a;--band-3:#1d3e70;--font-display:"IBM Plex Sans Condensed","IBM Plex Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;--font-body:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,Consolas,Menlo,monospace;--font-serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;--shadow-1:0 1px 2px rgba(14,26,43,.05);--shadow-2:0 2px 4px rgba(14,26,43,.05),0 10px 24px rgba(14,26,43,.08);--radius:10px;--radius-sm:8px;--page-max:2240px;--gutter:16px;--measure:70ch}
+
+@media (min-width:640px){:root{--gutter:24px}}
+@media (min-width:1500px){:root{--gutter:32px}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.58 var(--font-body);font-variant-numeric:tabular-nums}
+a{color:var(--link);text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+b,strong{font-weight:600}
+code,kbd,samp{font-family:var(--font-mono);font-size:.92em}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;color:var(--ink);margin:0}
+p,li{max-width:var(--measure)}
+/* the frame (WIDE_DESKTOP_STANDARD: grows to 2,240 px; the width becomes columns, never longer lines) */
+.jl-frame{width:100%;max-width:var(--page-max);margin-inline:auto;padding-left:max(var(--gutter),env(safe-area-inset-left,0px));padding-right:max(var(--gutter),env(safe-area-inset-right,0px))}
+/* the top bar: the mark, "JL Hub", the page's name; tabs on the right, underlined in navy */
+.jl-top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px)}
+.jl-top .jl-frame{display:flex;align-items:center;gap:22px;min-height:56px}
+.jl-brand{display:inline-flex;align-items:center;gap:10px;font:600 15.5px/1 var(--font-display);letter-spacing:.01em;color:var(--ink);text-decoration:none;white-space:nowrap}
+.jl-brand svg{flex:0 0 auto;display:block}
+.jl-brand b{font-weight:600;color:var(--muted)}
+.jl-tabs{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none;align-self:stretch}
+.jl-tabs::-webkit-scrollbar{display:none}
+.jl-tabs a{display:flex;align-items:center;font:500 13.5px/1 var(--font-body);color:var(--muted);text-decoration:none;padding:0 12px;border-bottom:2px solid transparent;white-space:nowrap}
+.jl-tabs a:hover{color:var(--ink)}
+.jl-tabs a[aria-current="page"]{color:var(--brand);border-bottom-color:var(--brand);font-weight:600}
+@media (max-width:700px){.jl-brand b{display:none}}
+/* the masthead: the page title, the "Updated" stamp */
+.jl-mast{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:4px 24px;padding:24px 0 14px}
+.jl-mast h1{font-size:clamp(24px,2.6vw,32px);line-height:1.12;letter-spacing:-.01em}
+.jl-mast .jl-sub{grid-column:1/-1;color:var(--ink-2);margin:2px 0 0;font-size:15px}
+@media (max-width:639px){.jl-mast{grid-template-columns:1fr}}
+.jl-stamp{color:var(--muted);font-size:13px;white-space:nowrap}
+.jl-stamp b{color:var(--brand);font-weight:600}
+/* small labels: IBM Plex Mono, capitals, letter-spaced */
+.jl-label{font:500 11px/1.3 var(--font-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.jl-label.acc{color:var(--brand)} .jl-label.ok{color:var(--green)}
+/* cards and panels: white on the grey page, a hairline, a whisper of shadow */
+.jl-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-1);padding:18px 20px;min-width:0}
+/* colour on purpose (Dylan, 28 Oct 2026, 11:47 PT): a top rule says what a card is about. navy = structure, green = good or done, amber = watch, crimson = late */
+.jl-card.acc{border-top:3px solid var(--brand)} .jl-card.ok{border-top:3px solid var(--green)} .jl-card.warn{border-top:3px solid var(--amber)} .jl-card.bad{border-top:3px solid var(--crimson)}
+.jl-card>h2,.jl-card>h3{margin-bottom:8px}
+.jl-panel{background:var(--card-2);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px}
+.jl-sec{margin:34px 0 14px}
+.jl-sec h2{position:relative;font-size:20px;line-height:1.25;padding-bottom:9px;border-bottom:1px solid var(--line)}
+.jl-sec h2::after{content:"";position:absolute;left:0;bottom:-1px;width:56px;height:3px;background:var(--brand);border-radius:2px}
+.jl-sec h2 .no{color:var(--brand);margin-right:10px}
+.jl-sec .jl-sub{color:var(--muted);font-size:13.5px;margin-top:4px}
+h3{font-size:16px;line-height:1.3}
+/* grids (auto-fit; the page's extra width becomes columns) */
+.jl-grid{display:grid;gap:16px;align-items:start;grid-template-columns:repeat(auto-fit,minmax(min(var(--col,440px),100%),1fr))}
+.jl-grid.kpis{--col:160px}
+.jl-grid.cards{--col:280px}
+.jl-grid.wide{--col:520px}
+/* key figures: a label, the figure in Condensed, a note */
+.jl-kpi{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brand);border-radius:var(--radius);padding:12px 16px 14px;min-width:0}
+.jl-kpi.ok{border-top-color:var(--green)} .jl-kpi.warn{border-top-color:var(--amber)} .jl-kpi.bad{border-top-color:var(--crimson)} .jl-kpi.info{border-top-color:var(--blue)}
+.jl-kpi .v{font:600 30px/1.1 var(--font-display);color:var(--ink);margin:6px 0 2px;letter-spacing:-.01em}
+.jl-kpi .v small{font:500 14px var(--font-body);color:var(--muted);margin-left:4px}
+.jl-kpi .x{font-size:12.5px;color:var(--muted);line-height:1.4}
+/* a change, with its direction: green up, crimson down, slate flat (arrows from the font: ↑ ↓) */
+.jl-delta{display:inline-flex;align-items:center;gap:3px;font:600 12px/1 var(--font-body);border-radius:999px;padding:4px 8px;white-space:nowrap;background:var(--slate-bg);color:var(--slate)}
+.jl-delta.up{background:var(--green-bg);color:var(--green)} .jl-delta.down{background:var(--crimson-bg);color:var(--crimson)}
+/* bars: mark blue carries data; green when done or on track */
+.jl-bar{height:8px;background:var(--track);border-radius:6px;overflow:hidden} .jl-bar>i{display:block;height:100%;background:var(--mark-2);border-radius:6px}
+.jl-bar.ok>i{background:var(--green)} .jl-bar.warn>i{background:var(--amber)} .jl-bar.bad>i{background:var(--crimson)}
+/* a list of things done: green ticks */
+ul.jl-ticks{list-style:none;padding-left:0} ul.jl-ticks li{position:relative;padding-left:24px} ul.jl-ticks li::before{content:"\2713";position:absolute;left:2px;top:0;color:var(--green);font-weight:700}
+/* a navy band for a page header or a hero */
+.jl-band{background:linear-gradient(135deg,var(--band-1) 0%,var(--band-2) 58%,var(--band-3) 100%);color:#fff;border-radius:12px;padding:22px 26px}
+.jl-band h1,.jl-band h2,.jl-band h3{color:#fff} .jl-band .jl-label{color:rgba(255,255,255,.72)} .jl-band p{color:rgba(255,255,255,.86)}
+/* status: a word on its tint, never colour alone */
+.jl-pill{display:inline-flex;align-items:center;gap:6px;font:600 11.5px/1 var(--font-display);letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:5px 10px;white-space:nowrap;background:var(--slate-bg);color:var(--slate)}
+.jl-pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.jl-pill.ok{background:var(--green-bg);color:var(--green)} .jl-pill.warn{background:var(--amber-bg);color:var(--amber)}
+.jl-pill.bad{background:var(--crimson-bg);color:var(--crimson)} .jl-pill.info{background:var(--blue-bg);color:var(--blue)}
+/* tables: hairlines, the header in navy Condensed capitals on the navy tint, figures right-aligned */
+.jl-tw{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--card)}
+table.jl-t{width:100%;border-collapse:collapse;font-size:14px}
+table.jl-t th{background:var(--brand-bg);color:var(--brand);font:600 11.5px/1.3 var(--font-display);letter-spacing:.06em;text-transform:uppercase;text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+table.jl-t td{padding:9px 12px;border-bottom:1px solid var(--line-2);vertical-align:top}
+table.jl-t tr:last-child td{border-bottom:0}
+table.jl-t .num{text-align:right;white-space:nowrap}
+table.jl-t code,.jl-mono{font-family:var(--font-mono);font-size:.92em}
+/* a callout: the navy tint, a navy edge (as the reports' "What it tells us"); .ok = the recommendation, green */
+.jl-callout{background:var(--brand-bg);border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:var(--radius-sm);padding:14px 16px}
+.jl-callout.ok{border-left-color:var(--green);background:var(--green-bg)}
+.jl-callout .jl-label{display:block;margin-bottom:6px;color:var(--brand)}
+.jl-callout.ok .jl-label{color:var(--green)}
+/* a file path Dylan pastes into Windows (file links do not click for him) */
+.jl-path{display:flex;gap:10px;align-items:center;background:var(--card-2);border:1px solid var(--line);border-radius:var(--radius-sm);padding:9px 10px 9px 12px}
+.jl-path code{flex:1;font:13px/1.45 var(--font-mono);color:var(--ink-2);overflow-wrap:anywhere}
+.jl-btn{font:600 13.5px/1 var(--font-body);border:1px solid var(--brand);background:var(--brand);color:#fff;border-radius:var(--radius-sm);padding:9px 14px;cursor:pointer;white-space:nowrap}
+.jl-btn.ghost{background:var(--card);color:var(--ink);border-color:var(--line)}
+.jl-btn.white{background:#fff;color:var(--brand);border-color:#fff;text-decoration:none;display:inline-block}  /* the one button on a dark band */
+.jl-btn:focus-visible{outline:2px solid var(--brand);outline-offset:2px} .jl-band .jl-btn:focus-visible,.jl-cover .jl-btn:focus-visible{outline-color:#fff}
+.jl-btn:hover{filter:brightness(1.08)}
+/* the report cover (as the Item Reports): navy, the title in IBM Plex Serif, a thin gold rule */
+.jl-cover{position:relative;background:linear-gradient(135deg,var(--band-1) 0%,var(--band-2) 58%,var(--band-3) 100%);color:#fff;border-radius:12px;padding:26px 30px 28px;overflow:hidden}
+.jl-cover::after{content:"";position:absolute;left:30px;right:30px;bottom:0;height:3px;background:linear-gradient(90deg,var(--gold),rgba(201,162,78,0))}
+.jl-cover .jl-label{color:rgba(255,255,255,.72)}
+.jl-cover h1{font:600 clamp(28px,3.4vw,40px)/1.1 var(--font-serif);color:#fff;margin:10px 0 10px;letter-spacing:-.01em}
+.jl-cover p{color:rgba(255,255,255,.86);margin:0}
+.jl-rsec{display:flex;align-items:baseline;gap:12px;font:600 24px/1.2 var(--font-serif);border-bottom:2px solid var(--ink);padding-bottom:10px;margin:34px 0 16px}
+.jl-rsec .no{font-family:var(--font-display);color:var(--gold-2)}
+.jl-lede{font:400 clamp(17px,1.6vw,19px)/1.5 var(--font-serif);color:var(--ink)}
+/* footer */
+.jl-foot{margin:40px 0 0;padding:16px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
+@media print{
+  body{background:#fff;font-size:10pt}
+  .jl-top{position:static;backdrop-filter:none}
+  .jl-tabs,.jl-btn{display:none}
+  .jl-card,.jl-kpi,.jl-panel,.jl-callout,.jl-cover{break-inside:avoid;box-shadow:none}
+  .jl-frame{max-width:none;padding:0}
+  @page{size:Letter;margin:14mm 14mm 16mm}
+}
+
+html{scroll-behavior:smooth;scroll-padding-top:84px} body{background:var(--bg);color:var(--ink)}
+.skip{position:absolute;left:-999px;top:8px;z-index:50;background:#fff;color:var(--brand);padding:10px 14px;border-radius:8px;font-weight:600}
+.skip:focus{left:12px}
+a{color:var(--link)}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
+
+/* the header */
+.site-top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.88);-webkit-backdrop-filter:saturate(1.4) blur(12px);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+.site-top.scrolled{border-bottom-color:var(--line);box-shadow:0 8px 24px rgba(14,26,43,.06)}
+.site-top .wrap{display:flex;align-items:center;gap:24px;min-height:68px}
+.brand{display:inline-flex;align-items:center;gap:10px;font:600 19px/1 var(--font-display);color:var(--ink);text-decoration:none;letter-spacing:-.005em}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{font:600 14.5px/1 var(--font-body);color:var(--ink-2);text-decoration:none;padding:11px 14px;border-radius:8px;transition:color .2s,background .2s}
+.nav a:hover{color:var(--brand);background:var(--brand-bg)}
+.cta{font:600 14.5px/1 var(--font-body);color:#fff;background:var(--brand);text-decoration:none;padding:12px 18px;border-radius:10px;transition:background .2s,transform .2s;white-space:nowrap}
+.cta:hover{background:var(--brand-2);transform:translateY(-1px)}
+@media (max-width:760px){.nav{display:none}.cta{margin-left:auto}}
+
+/* the hero */
+.hero{position:relative;overflow:hidden;margin-top:20px;border-radius:18px;color:#fff;
+  background:linear-gradient(135deg,var(--band-1) 0%,var(--band-2) 58%,var(--band-3) 100%);isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-25%;z-index:-1;
+  background:radial-gradient(38% 42% at 72% 34%,rgba(59,111,196,.42),transparent 70%),radial-gradient(34% 36% at 18% 86%,rgba(31,68,120,.6),transparent 72%);
+  animation:drift 22s ease-in-out infinite alternate}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:40px 40px;-webkit-mask-image:radial-gradient(120% 90% at 30% 40%,#000 30%,transparent 80%);mask-image:radial-gradient(120% 90% at 30% 40%,#000 30%,transparent 80%)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;align-items:center;padding:clamp(30px,5vw,72px) clamp(22px,4.4vw,64px) clamp(22px,3vw,40px)}
+@media (min-width:980px){.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:24px;padding-bottom:clamp(30px,5vw,72px)}}
+.hero-copy>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0) * 110ms + 120ms)}
+.eyebrow{display:inline-block;font:500 11.5px/1.3 var(--font-mono);letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.74)}
+.hero h1{font:600 clamp(36px,5.2vw,68px)/1.03 var(--font-display);letter-spacing:-.02em;margin:14px 0 18px;max-width:14em;color:#fff}
+.hero-sub{font-size:clamp(16.5px,1.4vw,20px);line-height:1.6;color:rgba(255,255,255,.88);max-width:36em;margin:0 0 28px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn-light{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--brand);font:600 15px/1 var(--font-body);padding:15px 20px;border-radius:12px;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn-light:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.btn-line{display:inline-flex;align-items:center;gap:10px;background:transparent;color:#fff;font:600 15px/1 var(--font-body);padding:14px 19px;border-radius:12px;text-decoration:none;border:1px solid rgba(255,255,255,.42);cursor:pointer;transition:background .2s,border-color .2s}
+.btn-line:hover{background:rgba(255,255,255,.08);border-color:#fff}
+.hero :focus-visible,.contact-band :focus-visible{outline-color:#fff}
+.hero-art{max-width:600px;width:100%;justify-self:center}
+.loop{display:block;width:100%;height:auto;overflow:visible}
+.loop .ring{fill:none;stroke:rgba(255,255,255,.3);stroke-width:1.2;stroke-dasharray:2 9;animation:flow 40s linear infinite}
+.loop .ring2{fill:none;stroke:rgba(255,255,255,.1);stroke-width:1}
+.loop .glow{transform-box:fill-box;transform-origin:center;animation:breathe 6s ease-in-out infinite}
+.loop .mk-a,.loop .mk-b{transform-box:fill-box}
+.loop .mk-a{animation:in-a 1.2s cubic-bezier(.2,.8,.2,1) .25s both}
+.loop .mk-b{animation:in-b 1.2s cubic-bezier(.2,.8,.2,1) .4s both}
+.loop .node{animation:fade 1s ease .9s both}
+.loop .pill{fill:rgba(255,255,255,.07);stroke:rgba(255,255,255,.3);stroke-width:1;animation:node-on 9s ease-in-out infinite}
+.loop .n2 .pill{animation-delay:1.45s} .loop .n3 .pill{animation-delay:4.2s} .loop .n1 .pill{animation-delay:6.95s}
+.loop .nl{font:600 17px var(--font-display);fill:#fff}
+.loop .ns{font:500 8.6px var(--font-mono);letter-spacing:.14em;fill:rgba(255,255,255,.66)}
+.loop .pulse{fill:#9fc0f0}
+.loop .pulse-halo{fill:rgba(159,192,240,.18)}
+@media (max-width:600px){.loop .nl{font-size:25px}.loop .ns{display:none}.loop .nl{transform:translateY(7px)}}
+.loop .tw{animation:twinkle 7s ease-in-out infinite}
+.hero.small .hero-copy{padding:clamp(30px,5vw,72px) clamp(22px,4.4vw,64px)}
+
+/* the facts */
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--card);border:1px solid var(--line);border-radius:14px;margin-top:16px;overflow:hidden;box-shadow:var(--shadow-1)}
+.facts>div{padding:18px 22px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
+.facts>div:last-child{border-right:0}
+.facts b{font:600 18px/1.25 var(--font-display);color:var(--brand)} .facts b em{font-style:normal;color:var(--green);margin-right:8px}
+.facts span{font-size:14.5px;color:var(--ink-2)}
+@media (max-width:640px){.facts{grid-template-columns:1fr}.facts>div{border-right:0;border-bottom:1px solid var(--line)}.facts>div:last-child{border-bottom:0}}
+
+/* sections */
+.block{margin-top:clamp(48px,6vw,88px)}
+.jl-sec h2{font-size:clamp(24px,2.3vw,32px)}
+.jl-sec .jl-sub{font-size:16.5px;max-width:64ch}
+.cards3{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brand);border-radius:14px;padding:24px 24px 26px;box-shadow:var(--shadow-1);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-2)}
+.card h3{font:600 21px/1.25 var(--font-display);margin:8px 0 10px}
+.card p{margin:0;color:var(--ink-2);line-height:1.62;max-width:52ch}
+.ico{width:46px;height:46px;display:block;margin:0 0 14px;fill:none;stroke:var(--brand);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ico path:last-child{stroke:var(--mark-2)}
+
+/* manufacturers */
+.makers-grid{display:grid;gap:clamp(20px,3vw,40px);grid-template-columns:minmax(0,1fr);margin-top:20px;align-items:start}
+@media (min-width:1000px){.makers-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}}
+.tl{list-style:none;margin:0;padding:6px 0 0 56px;position:relative;counter-reset:step}
+.tl li{position:relative;counter-increment:step;padding:0 0 28px}
+.tl li:last-child{padding-bottom:0}
+.tl li:not(:last-child)::after{content:"";position:absolute;left:-37px;top:42px;bottom:-2px;width:2px;border-radius:2px;
+  background:linear-gradient(var(--mark-2),var(--mark-2)) top/2px 100% no-repeat var(--track)}
+.tl li::before{content:counter(step,decimal-leading-zero);position:absolute;left:-56px;top:-2px;width:40px;height:40px;border-radius:50%;background:var(--brand);color:#fff;
+  font:600 14px/40px var(--font-display);text-align:center;box-shadow:0 0 0 5px var(--bg)}
+.tl b{display:block;font:600 19px/1.3 var(--font-display);color:var(--ink);margin:6px 0 6px}
+.tl span{display:block;color:var(--ink-2);line-height:1.62;max-width:58ch}
+.doc-side{display:flex;flex-direction:column;gap:16px}
+.docs{position:relative;min-height:340px;margin:6px 6px 0}
+.doc{position:absolute;left:0;right:0;top:0;margin:auto;max-width:430px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow-2);padding:22px 24px}
+.doc.p2{transform:translate(18px,16px) rotate(2.2deg);opacity:.75}
+.doc.p1{transform:rotate(-1.2deg)}
+.doc-top{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-bottom:12px;border-bottom:3px solid var(--brand)}
+.doc-brand{display:inline-flex;align-items:center;gap:8px;font:600 15px var(--font-display);color:var(--ink)}
+.doc-kind{font:500 9.5px/1.2 var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brand);background:var(--brand-bg);padding:5px 8px;border-radius:999px;white-space:nowrap}
+.doc-meta{display:flex;justify-content:space-between;font:500 10px var(--font-mono);letter-spacing:.06em;color:var(--muted);margin:10px 0 16px}
+.doc-lab{font:500 9.5px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:16px 0 10px}
+.dl{height:8px;border-radius:4px;background:var(--line-2);margin:0 0 9px;transform-origin:left}
+.dl.title{height:11px;background:var(--brand);margin-bottom:14px}
+.dl.dot{position:relative;margin-left:18px;background:var(--brand-bg)} .dl.dot::before{content:"";position:absolute;left:-18px;top:0;width:8px;height:8px;border-radius:50%;background:var(--mark-2)}
+.w52{width:52%}.w55{width:55%}.w60{width:60%}.w64{width:64%}.w70{width:70%}.w80{width:80%}.w84{width:84%}.w88{width:88%}.w90{width:90%}.w92{width:92%}
+.note{margin:0}
+
+/* contact */
+.contact-band{margin-top:clamp(52px,6vw,96px);border-radius:18px;color:#fff;padding:clamp(28px,4.4vw,60px) clamp(22px,4.4vw,64px);
+  background:linear-gradient(135deg,var(--band-1) 0%,var(--band-2) 58%,var(--band-3) 100%);display:grid;gap:22px;grid-template-columns:minmax(0,1fr);align-items:center;position:relative;overflow:hidden}
+@media (min-width:980px){.contact-band{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.contact-band h2{font:600 clamp(30px,3.6vw,48px)/1.05 var(--font-display);color:#fff;margin:10px 0 10px}
+.contact-band p{margin:0;color:rgba(255,255,255,.86);font-size:16.5px}
+.cb-mail{display:inline-block;font:600 clamp(24px,2.6vw,36px)/1.15 var(--font-display);color:#fff;text-decoration:none;overflow-wrap:anywhere;border-bottom:2px solid rgba(255,255,255,.35);padding-bottom:4px}
+.cb-mail:hover{border-bottom-color:#fff}
+.cb-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+#copy.ok{border-color:#7fd1ad;color:#bff0d9}
+#copy.ok::before{content:"✓";color:#7fd1ad;font-weight:700}
+
+/* footer */
+.site-foot{margin-top:clamp(48px,6vw,88px);background:var(--card);border-top:1px solid var(--line);padding:clamp(28px,4vw,48px) 0 24px;color:var(--ink-2)}
+.foot-grid{display:grid;gap:28px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:760px){.foot-grid{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,1.2fr)}}
+.foot-brand p{margin:10px 0 0}
+.motto{font-style:italic;color:var(--ink-2)}
+.site-foot h3{font:500 11px/1.3 var(--font-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin:4px 0 10px}
+.site-foot ul{list-style:none;margin:0;padding:0} .site-foot li{margin:0 0 8px}
+.site-foot a{color:var(--ink-2);text-decoration:none} .site-foot a:hover{color:var(--brand);text-decoration:underline}
+.foot-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;margin-top:28px;padding-top:16px;border-top:1px solid var(--line);font-size:13.5px}
+
+/* motion: things rise into view (only when scripts run; otherwise everything simply shows) */
+html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+html.js .reveal.in{opacity:1;transform:none}
+html.js .jl-sec h2::after{width:0;transition:width .9s cubic-bezier(.2,.7,.2,1) .2s}
+html.js .jl-sec.in h2::after{width:56px}
+html.js .facts>div{opacity:0;transform:translateY(10px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+html.js .facts.in>div{opacity:1;transform:none}
+html.js .ico path{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.4s cubic-bezier(.4,.2,.2,1) calc(var(--d,0s) + .25s)}
+html.js .card.in .ico path{stroke-dashoffset:0}
+html.js .tl li:not(:last-child)::after{background-size:2px 0%;transition:background-size .8s cubic-bezier(.3,.6,.2,1) calc(var(--d,0s) + .3s)}
+html.js .tl.in li:not(:last-child)::after{background-size:2px 100%}
+html.js .tl li{opacity:0;transform:translateX(-10px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+html.js .tl.in li{opacity:1;transform:none}
+html.js .doc.p1 .dl,html.js .doc.p1 .doc-lab{transform:scaleX(0);transition:transform .7s cubic-bezier(.3,.6,.2,1)}
+html.js .doc-side.in .doc.p1 .dl,html.js .doc-side.in .doc.p1 .doc-lab{transform:none}
+html.js .doc.p1 .doc-lab{transform:none;opacity:0;transition:opacity .6s ease .9s} html.js .doc-side.in .doc.p1 .doc-lab{opacity:1}
+html.js .doc-side.in .doc.p1 .dl:nth-of-type(1){transition-delay:0.37s}
+html.js .doc-side.in .doc.p1 .dl:nth-of-type(2){transition-delay:0.49s}
+html.js .doc-side.in .doc.p1 .dl:nth-of-type(3){transition-delay:0.61s}
+html.js .doc-side.in .doc.p1 .dl:nth-of-type(4){transition-delay:0.73s}
+html.js .doc-side.in .doc.p1 .dl:nth-of-type(5){transition-delay:0.85s}
+html.js .doc-side.in .doc.p1 .dl:nth-of-type(6){transition-delay:0.97s}
+html.js .doc-side.in .doc.p1 .dl:nth-of-type(7){transition-delay:1.09s}
+html.js .doc-side.in .doc.p1 .dl:nth-of-type(8){transition-delay:1.21s}
+html.js .doc-side.in .doc.p1 .dl:nth-of-type(9){transition-delay:1.33s}
+
+html.js .doc.p1{transform:translateY(26px) rotate(-1.2deg);opacity:0;transition:transform 1s cubic-bezier(.2,.7,.2,1),opacity .8s ease}
+html.js .doc-side.in .doc.p1{transform:rotate(-1.2deg);opacity:1}
+html.js .doc.p2{transform:translate(18px,40px) rotate(2.2deg);opacity:0;transition:transform 1.1s cubic-bezier(.2,.7,.2,1) .1s,opacity .8s ease .1s}
+html.js .doc-side.in .doc.p2{transform:translate(18px,16px) rotate(2.2deg);opacity:.75}
+
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes drift{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(-4%,3%,0) scale(1.06)}}
+@keyframes flow{to{stroke-dashoffset:-330}}
+@keyframes breathe{0%,100%{transform:scale(.92);opacity:.8}50%{transform:scale(1.07);opacity:1}}
+@keyframes in-a{from{opacity:0;transform:translate(-2px,-2px)}to{opacity:1;transform:none}}
+@keyframes in-b{from{opacity:0;transform:translate(2px,2px)}to{opacity:1;transform:none}}
+@keyframes node-on{0%,17%,100%{fill:rgba(255,255,255,.07);stroke:rgba(255,255,255,.3)}5%,11%{fill:rgba(255,255,255,.2);stroke:#fff}}
+@keyframes twinkle{0%,100%{fill-opacity:.05}50%{fill-opacity:.24}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  html.js .reveal,html.js .facts>div,html.js .tl li,html.js .doc.p1,html.js .doc.p2,html.js .doc.p1 .dl,html.js .doc.p1 .doc-lab{opacity:1!important;transform:none!important}
+  html.js .doc.p2{transform:translate(18px,16px) rotate(2.2deg)!important;opacity:.75!important} html.js .doc.p1{transform:rotate(-1.2deg)!important}
+  html.js .ico path{stroke-dashoffset:0!important} html.js .tl li::after{background-size:2px 100%!important} html.js .jl-sec h2::after{width:56px!important}
+}
+@media print{.site-top,.hero-art,.cb-btns{display:none}.hero,.contact-band{color:#000;background:none;border:1px solid #ccc}.hero h1,.contact-band h2,.cb-mail{color:#000}}
+</style><script>document.documentElement.className="js"</script></head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="site-top"><div class="jl-frame wrap"><a class="brand" href="#top" aria-label="JL Hub, top of the page"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 22 22" role="img" aria-label="JL Hub"><path d="M6 0H16A6 6 0 0 1 22 6V16A6 6 0 0 1 16 22H6A6 6 0 0 1 0 16V6A6 6 0 0 1 6 0Z" fill="#3b6fc4"/><path d="M6 0H16A6 6 0 0 1 20.660 2.220L2.220 20.660A6 6 0 0 1 0 16V6A6 6 0 0 1 6 0Z" fill="#15315b"/></svg><span>JL Hub</span></a><nav class="nav" aria-label="Sections"><a href="#what">What we do</a><a href="#makers">Manufacturers</a><a href="#contact">Contact</a></nav><a class="cta" href="mailto:contact@jl-hub.com">Email us</a></div></header>
+
+<main id="main" class="jl-frame">
+<section class="hero" id="top" aria-labelledby="h1">
+<div class="hero-grid">
+<div class="hero-copy">
+<span class="eyebrow" style="--i:0">JL Hub LLC · California, USA</span>
+<h1 id="h1" style="--i:1">Everyday products,<br> designed in the USA.</h1>
+<p class="hero-sub" style="--i:2">We design consumer products in the USA, have them made by manufacturers we choose, and sell them online in the United States.</p>
+<div class="hero-ctas" style="--i:3"><a class="btn-light" href="mailto:contact@jl-hub.com">contact@jl-hub.com</a><a class="btn-line" href="#makers">How we work with manufacturers</a></div>
+</div>
+<div class="hero-art"><svg class="loop" viewBox="0 0 560 460" aria-hidden="true" focusable="false"><defs><radialGradient id="g-glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3b6fc4" stop-opacity=".62"/><stop offset="1" stop-color="#3b6fc4" stop-opacity="0"/></radialGradient><path id="g-orbit" d="M280,64 A166,166 0 1,1 279.9,396 A166,166 0 1,1 280,64"/></defs><g class="tiles"><rect x="18" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="46" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="74" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06" class="tw" style="animation-delay:2.2s"/><rect x="102" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="130" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="158" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08" class="tw" style="animation-delay:4.4s"/><rect x="186" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="214" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="354" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14" class="tw" style="animation-delay:6.6s"/><rect x="382" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="410" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="438" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11" class="tw" style="animation-delay:1.8s"/><rect x="466" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="494" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="522" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05" class="tw" style="animation-delay:3.9s"/><rect x="550" y="18" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="18" y="46" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="46" y="46" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06" class="tw" style="animation-delay:6.1s"/><rect x="74" y="46" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="102" y="46" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="130" y="46" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08" class="tw" style="animation-delay:1.3s"/><rect x="410" y="46" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="438" y="46" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="466" y="46" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14" class="tw" style="animation-delay:3.5s"/><rect x="494" y="46" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="522" y="46" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="550" y="46" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11" class="tw" style="animation-delay:5.7s"/><rect x="18" y="74" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="46" y="74" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="74" y="74" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05" class="tw" style="animation-delay:0.9s"/><rect x="102" y="74" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="438" y="74" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="466" y="74" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06" class="tw" style="animation-delay:3.1s"/><rect x="494" y="74" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="522" y="74" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="550" y="74" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08" class="tw" style="animation-delay:5.3s"/><rect x="18" y="102" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="46" y="102" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="74" y="102" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14" class="tw" style="animation-delay:0.5s"/><rect x="466" y="102" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="494" y="102" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="522" y="102" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11" class="tw" style="animation-delay:2.7s"/><rect x="550" y="102" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="18" y="130" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="46" y="130" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05" class="tw" style="animation-delay:4.9s"/><rect x="74" y="130" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="494" y="130" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="522" y="130" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06" class="tw" style="animation-delay:0.0s"/><rect x="550" y="130" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="18" y="158" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="46" y="158" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08" class="tw" style="animation-delay:2.2s"/><rect x="494" y="158" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="522" y="158" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="550" y="158" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14" class="tw" style="animation-delay:4.4s"/><rect x="18" y="186" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="46" y="186" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="494" y="186" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11" class="tw" style="animation-delay:6.6s"/><rect x="522" y="186" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="550" y="186" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="18" y="214" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05" class="tw" style="animation-delay:1.8s"/><rect x="46" y="214" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="494" y="214" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="522" y="214" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06" class="tw" style="animation-delay:4.0s"/><rect x="550" y="214" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="18" y="242" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="46" y="242" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08" class="tw" style="animation-delay:6.2s"/><rect x="494" y="242" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="522" y="242" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="550" y="242" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14" class="tw" style="animation-delay:1.4s"/><rect x="18" y="270" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="46" y="270" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="494" y="270" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11" class="tw" style="animation-delay:3.6s"/><rect x="522" y="270" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="550" y="270" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="18" y="298" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05" class="tw" style="animation-delay:5.8s"/><rect x="46" y="298" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="494" y="298" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="522" y="298" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06" class="tw" style="animation-delay:0.9s"/><rect x="550" y="298" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="18" y="326" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="46" y="326" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08" class="tw" style="animation-delay:3.1s"/><rect x="74" y="326" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="466" y="326" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="494" y="326" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14" class="tw" style="animation-delay:5.3s"/><rect x="522" y="326" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="550" y="326" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="18" y="354" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11" class="tw" style="animation-delay:0.5s"/><rect x="46" y="354" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="74" y="354" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="102" y="354" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05" class="tw" style="animation-delay:2.7s"/><rect x="466" y="354" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="494" y="354" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="522" y="354" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06" class="tw" style="animation-delay:4.9s"/><rect x="550" y="354" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="18" y="382" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="46" y="382" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08" class="tw" style="animation-delay:0.1s"/><rect x="74" y="382" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="102" y="382" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="438" y="382" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14" class="tw" style="animation-delay:2.3s"/><rect x="466" y="382" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="494" y="382" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="522" y="382" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11" class="tw" style="animation-delay:4.5s"/><rect x="550" y="382" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="18" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="46" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05" class="tw" style="animation-delay:6.6s"/><rect x="74" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="102" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="130" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06" class="tw" style="animation-delay:1.8s"/><rect x="158" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="382" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="410" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08" class="tw" style="animation-delay:4.0s"/><rect x="438" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="466" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="494" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14" class="tw" style="animation-delay:6.2s"/><rect x="522" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="550" y="410" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="18" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11" class="tw" style="animation-delay:1.4s"/><rect x="46" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="74" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="102" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05" class="tw" style="animation-delay:3.6s"/><rect x="130" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="158" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="186" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06" class="tw" style="animation-delay:5.8s"/><rect x="214" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="242" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="270" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08" class="tw" style="animation-delay:1.0s"/><rect x="298" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11"/><rect x="326" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="354" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14" class="tw" style="animation-delay:3.2s"/><rect x="382" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05"/><rect x="410" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/><rect x="438" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.11" class="tw" style="animation-delay:5.4s"/><rect x="466" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06"/><rect x="494" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.14"/><rect x="522" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.05" class="tw" style="animation-delay:0.5s"/><rect x="550" y="438" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.08"/></g><circle class="ring" cx="280" cy="230" r="166"/><circle class="ring2" cx="280" cy="230" r="112"/><circle class="glow" cx="280" cy="230" r="128" fill="url(#g-glow)"/><g transform="translate(218.0 168.0) scale(5.6364)"><path class="mk-b" d="M6 0H16A6 6 0 0 1 22 6V16A6 6 0 0 1 16 22H6A6 6 0 0 1 0 16V6A6 6 0 0 1 6 0Z" fill="#3b6fc4"/><path class="mk-a" d="M6 0H16A6 6 0 0 1 20.660 2.220L2.220 20.660A6 6 0 0 1 0 16V6A6 6 0 0 1 6 0Z" fill="#ffffff"/></g><g class="node n1" transform="translate(122.1 178.7)"><rect class="pill" x="-75" y="-25" width="150" height="50" rx="25"/><text class="nl" x="0" y="-2" text-anchor="middle">Design</text><text class="ns" x="0" y="14" text-anchor="middle">IN THE USA</text></g><g class="node n2" transform="translate(437.9 178.7)"><rect class="pill" x="-75" y="-25" width="150" height="50" rx="25"/><text class="nl" x="0" y="-2" text-anchor="middle">Make</text><text class="ns" x="0" y="14" text-anchor="middle">WITH CHOSEN MAKERS</text></g><g class="node n3" transform="translate(280.0 396.0)"><rect class="pill" x="-75" y="-25" width="150" height="50" rx="25"/><text class="nl" x="0" y="-2" text-anchor="middle">Sell</text><text class="ns" x="0" y="14" text-anchor="middle">ONLINE IN THE US</text></g><circle class="pulse" r="6"><animateMotion dur="9s" repeatCount="indefinite"><mpath href="#g-orbit"/></animateMotion></circle><circle class="pulse-halo" r="13"><animateMotion dur="9s" repeatCount="indefinite"><mpath href="#g-orbit"/></animateMotion></circle></svg></div>
+</div>
+</section>
+
+<div class="facts reveal">
+<div style="--d:.05s"><b><em aria-hidden="true">✓</em>Designed</b><span>in the USA</span></div>
+<div style="--d:.15s"><b><em aria-hidden="true">✓</em>Based</b><span>in California</span></div>
+<div style="--d:.25s"><b><em aria-hidden="true">✓</em>Independent</b><span>owned by its two founders</span></div>
+</div>
+
+<section class="block" id="what" aria-labelledby="what-h">
+<div class="jl-sec reveal"><h2 id="what-h">What we do</h2><p class="jl-sub">JL Hub LLC is an independent, American-owned consumer products company based in California, run by its two founders.</p></div>
+<div class="cards3">
+<article class="card reveal" style="--d:0s"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path pathLength="1" d="M10 38 L10 30 L30 10 L38 18 L18 38 Z"/><path pathLength="1" d="M26 14 L34 22"/><path pathLength="1" d="M10 30 L18 38"/><path pathLength="1" d="M30 38 H40"/><path pathLength="1" d="M8 42 H40"/></svg><span class="jl-label acc">Design</span><h3>Designed in the USA</h3><p>We write each product's specification ourselves, starting from what customers say about the products already on the market.</p></article>
+<article class="card reveal" style="--d:.12s"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path pathLength="1" d="M6 40 V22 L16 28 V22 L26 28 V22 L36 28 V14 H42 V40 Z"/><path pathLength="1" d="M6 40 H42"/><path pathLength="1" d="M14 34 H18"/><path pathLength="1" d="M24 34 H28"/><path pathLength="1" d="M34 34 H38"/></svg><span class="jl-label acc">Make</span><h3>Made by manufacturers we choose</h3><p>We request quotations and samples from manufacturers, and choose on quality, communication and price.</p></article>
+<article class="card reveal" style="--d:.24s"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path pathLength="1" d="M10 16 H38 L35 40 H13 Z"/><path pathLength="1" d="M18 16 V12 A6 6 0 0 1 30 12 V16"/><path pathLength="1" d="M19 27 L23 31 L30 23"/></svg><span class="jl-label acc">Sell</span><h3>Sold online in the USA</h3><p>We sell our products online to customers in the United States.</p></article>
+</div>
+</section>
+
+<section class="block" id="makers" aria-labelledby="makers-h">
+<div class="jl-sec reveal"><h2 id="makers-h">How we work with manufacturers</h2><p class="jl-sub">If you have received a request for quotation from us, this is what happens, step by step.</p></div>
+<div class="makers-grid">
+<ol class="tl reveal">
+<li style="--d:.15s"><b>A short request for quotation</b><span>Two pages in English: the product in plain words, the few things that must be right, and what we would like in your reply. Prices in US dollars, FOB your port.</span></li>
+<li style="--d:.45s"><b>Your quotation</b><span>We compare the replies on quality, communication and price, and we ask whether the sample cost can be credited toward a first order.</span></li>
+<li style="--d:.75s"><b>Samples from multiple makers</b><span>We test the samples before we choose, and work on the design with the maker we choose.</span></li>
+<li style="--d:1.05s"><b>A first order, then re-orders</b><span>We place a first order, then re-order as sales grow.</span></li>
+</ol>
+<div class="doc-side reveal">
+<div class="docs" aria-hidden="true">
+<div class="doc p2"><div class="dl w60"></div><div class="dl w90"></div><div class="dl w80"></div><div class="dl w70"></div></div>
+<div class="doc p1">
+<div class="doc-top"><span class="doc-brand"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 22 22" role="img" aria-label="JL Hub"><path d="M6 0H16A6 6 0 0 1 22 6V16A6 6 0 0 1 16 22H6A6 6 0 0 1 0 16V6A6 6 0 0 1 6 0Z" fill="#3b6fc4"/><path d="M6 0H16A6 6 0 0 1 20.660 2.220L2.220 20.660A6 6 0 0 1 0 16V6A6 6 0 0 1 6 0Z" fill="#15315b"/></svg><b>JL Hub</b></span><span class="doc-kind">Request for quotation</span></div>
+<div class="doc-meta"><span>USD · FOB your port</span><span>Page 1 of 2</span></div>
+<div class="dl title w55"></div>
+<div class="dl w92"></div><div class="dl w84"></div><div class="dl w88"></div><div class="dl w60"></div>
+<div class="doc-lab">What must be right</div>
+<div class="dl dot w70"></div><div class="dl dot w64"></div><div class="dl dot w52"></div>
+</div>
+</div>
+<div class="jl-callout note"><span class="jl-label">Our email</span><p>Our email addresses end in <b>@jl-hub.com</b>. If you are not sure a message is from us, please check with us at <a href="mailto:contact@jl-hub.com">contact@jl-hub.com</a>.</p></div>
+</div>
+</div>
+</section>
+
+<section class="contact-band reveal" id="contact" aria-labelledby="contact-h">
+<div class="cb-copy"><span class="eyebrow">Contact</span><h2 id="contact-h">Write to us.</h2><p>Quotations, samples and partnerships. JL Hub LLC, California, USA.</p></div>
+<div class="cb-act"><a class="cb-mail" href="mailto:contact@jl-hub.com">contact@jl-hub.com</a>
+<div class="cb-btns"><a class="btn-light" href="mailto:contact@jl-hub.com">Email us</a><button class="btn-line" type="button" id="copy"><span>Copy the address</span></button></div></div>
+</section>
+</main>
+<footer class="site-foot"><div class="jl-frame"><div class="foot-grid"><div class="foot-brand"><a class="brand" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" role="img" aria-label="JL Hub"><path d="M6 0H16A6 6 0 0 1 22 6V16A6 6 0 0 1 16 22H6A6 6 0 0 1 0 16V6A6 6 0 0 1 6 0Z" fill="#3b6fc4"/><path d="M6 0H16A6 6 0 0 1 20.660 2.220L2.220 20.660A6 6 0 0 1 0 16V6A6 6 0 0 1 6 0Z" fill="#15315b"/></svg><span>JL Hub</span></a><p>JL Hub LLC · California, USA</p><p class="motto">Premium by default. Systems by design.</p></div><div><h3>Company</h3><ul><li><a href="#what">What we do</a></li><li><a href="#makers">Manufacturers</a></li><li><a href="#contact">Contact</a></li></ul></div><div><h3>Contact</h3><ul><li><a href="mailto:contact@jl-hub.com">contact@jl-hub.com</a></li><li>Quotations, samples and partnerships</li></ul></div></div><div class="foot-base"><span>© 2026 JL Hub LLC. All rights reserved.</span><span>This site sets no cookies and uses no tracking.</span></div></div></footer>
+<script>
+(function () {
+  var d = document, reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = [].slice.call(d.querySelectorAll('.reveal'));
+  if (reduce || !('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); }
+  else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
+  }
+  if (reduce) { var s = d.querySelector('svg.loop'); if (s && s.pauseAnimations) { s.pauseAnimations(); } }
+  var top = d.querySelector('.site-top');
+  function shade() { if (top) { top.classList.toggle('scrolled', (window.scrollY || d.documentElement.scrollTop) > 8); } }
+  window.addEventListener('scroll', shade, { passive: true }); shade();
+  var b = d.getElementById('copy');
+  if (b) {
+    b.addEventListener('click', function () {
+      var t = 'contact@jl-hub.com', label = b.querySelector('span');
+      function done(ok) { b.classList.toggle('ok', ok); label.textContent = ok ? 'Copied' : 'Select and copy: ' + t; setTimeout(function () { b.classList.remove('ok'); label.textContent = 'Copy the address'; }, 2200); }
+      function fallback() {
+        var a = d.createElement('textarea'); a.value = t; a.setAttribute('readonly', ''); a.style.position = 'fixed'; a.style.opacity = '0'; d.body.appendChild(a); a.select();
+        var ok = false; try { ok = d.execCommand('copy'); } catch (err) { ok = false; } d.body.removeChild(a); done(ok);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(t).then(function () { done(true); }, fallback); } else { fallback(); }
+    });
+  }
+})();
+</script>
+</body></html>
